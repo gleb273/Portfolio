@@ -153,6 +153,14 @@
         }
       });
     });
+      const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.checked = false; // entfernt das Häkchen → Menü schließt sich
+    });
+  });
   </script>
 </body>
 </html>
