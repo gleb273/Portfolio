@@ -14,14 +14,13 @@
       <img class="logo" src="Gleb-removebg-preview.png" alt="Logo von Gleb Titov" />
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </label>
       <nav>
         <ul class="nav_links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Über mich</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projekte</a></li>
           <li><a href="#contact" class="cta"><button>Kontakt</button></a></li>
         </ul>
@@ -29,79 +28,100 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-text">
       <h1>Daten. Design. Disziplin.</h1>
       <h2>Ich bin <span class="accent">Gleb Titov</span> – Datenanalyst, Webdesigner & Leistungssportler.</h2>
-      <p>
-        Ich analysiere, gestalte und optimiere mit derselben Präzision, mit der ich im Training kämpfe.
-        Mein Ziel: komplexe Daten und digitale Designs in klare, wirkungsvolle Ergebnisse verwandeln.
-      </p>
+      <p>Ich analysiere, gestalte und optimiere mit derselben Präzision, mit der ich im Training kämpfe. Mein Ziel: komplexe Daten und digitale Designs in klare, wirkungsvolle Ergebnisse verwandeln.</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn">Projekte ansehen</a>
         <a href="#contact" class="btn-outline">Kontakt aufnehmen</a>
       </div>
     </div>
     <div class="hero-img">
-      <img src="generated-image.png" alt="Portrait von Gleb Titov" />
+      <img src="Gleb2.JPEG" alt="Portrait von Gleb Titov" />
     </div>
   </section>
 
-  <!-- Über mich Section -->
+  <!-- Über mich -->
   <section id="about" class="about">
     <div class="container">
       <h2>Über mich</h2>
-      <p>
-        Ich bin <strong>Gleb Titov</strong>, 22 Jahre alt – Datenanalyst, Hobby-Webdesigner und Leistungssportler im Ringen.
-        Seit 14 Jahren trainiere ich täglich, habe die 2. Bundesliga erreicht und wurde 3. Deutscher Meister.
-        Disziplin, Fokus und Durchhaltevermögen prägen nicht nur meinen Sport, sondern auch meine Arbeit am Code und Design.
-      </p>
-      <p>
-        Dieses Portfolio ist mein erstes richtiges Projekt. Ich kombiniere analytisches Denken mit kreativem Webdesign,
-        um digitale Lösungen zu schaffen, die sowohl ästhetisch als auch funktional überzeugen.
-        Mein Anspruch: präzise, dynamisch und professionell – genau wie ich selbst.
-      </p>
+      <p>Ich bin <strong>Gleb Titov</strong>, 22 Jahre alt – Datenanalyst, Webdesigner und Leistungssportler im Ringen. Seit 14 Jahren trainiere ich täglich, habe die 2. Bundesliga erreicht und wurde 3. Deutscher Meister. Disziplin, Fokus und Durchhaltevermögen prägen nicht nur meinen Sport, sondern auch meine Arbeit am Code und Design.</p>
+      <p>Dieses Portfolio ist ein weiterer großer Schritt auf meinem Weg, meine Vision zu verwirklichen: analytisches Denken mit kreativem Webdesign zu verbinden, um digitale Lösungen zu schaffen, die klar, präzise und professionell sind – genauso wie mein Anspruch an mich selbst.</p>
     </div>
   </section>
 
-  <!-- Projekte Section -->
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Webdesign</h3><p>HTML, CSS, JavaScript</p></div>
+        <div class="skill-card"><h3>Datenanalyse</h3><p>Python, Excel, Power BI</p></div>
+        <div class="skill-card"><h3>UI / UX</h3><p>Figma, Responsives Design</p></div>
+        <div class="skill-card"><h3>Disziplin</h3><p>Struktur, Ausdauer, Präzision</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophie -->
+  <section class="philosophy">
+    <div class="container">
+      <h2>Meine Philosophie</h2>
+      <p>Ich glaube an Klarheit, Struktur und Leistung – im Sport wie im Design. Für mich ist jedes Projekt eine Bühne, auf der Strategie und Kreativität miteinander ringen, bis ein sauberes, starkes Ergebnis entsteht.</p>
+    </div>
+  </section>
+
+  <!-- Projekte -->
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projekte</h2>
-      <p>Hier folgen bald ausgewählte Projekte und Case Studies zu meinen Arbeiten.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Minimalistisches, performantes Design mit Fokus auf Struktur und Präzision.</p>
+        </div>
+        <div class="project-card">
+          <h3>Data Dashboard</h3>
+          <p>Interaktive Visualisierungen in Power BI mit klarem Reporting-Fokus.</p>
+        </div>
+        <div class="project-card">
+          <h3>UX Redesign</h3>
+          <p>Benutzerzentrierte UI-Optimierung für eine bestehende Website.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer / Kontakt Section -->
-  <footer id="contact">
+  <!-- Kontaktformular -->
+  <section id="contact" class="contact-form">
+    <div class="container">
+      <h2>Kontakt aufnehmen</h2>
+      <p>Hast du ein Projekt, eine Idee oder eine Vision? Lass uns sprechen.</p>
+
+      <form action="https://formspree.io/f/xanprybo" method="POST">
+        <input type="text" name="name" placeholder="Dein Name" required />
+        <input type="email" name="_replyto" placeholder="Deine E-Mail-Adresse" required />
+        <textarea name="message" rows="5" placeholder="Deine Nachricht" required></textarea>
+        <button type="submit" class="btn">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <div class="container contact">
       <h2>Kontakt</h2>
       <div class="contact-links">
-        <!-- E-Mail -->
-        <a href="mailto:tvgleb27@gmail.com" target="_blank">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="#c8c8d4" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 4H22V20H2V4ZM12 13L2 6V18H22V6L12 13Z" />
-          </svg>
-          tvgleb27@gmail.com
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/glebt27/" target="_blank">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="#c8c8d4" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7 2C4.243 2 2 4.243 2 7V17C2 19.757 4.243 22 7 22H17C19.757 22 22 19.757 22 17V7C22 4.243 19.757 2 17 2H7ZM17 4C18.657 4 20 5.343 20 7V17C20 18.657 18.657 20 17 20H7C5.343 20 4 18.657 4 17V7C4 5.343 5.343 4 7 4H17ZM12 7C9.243 7 7 9.243 7 12C7 14.757 9.243 17 12 17C14.757 17 17 14.757 17 12C17 9.243 14.757 7 12 7ZM12 9C13.657 9 15 10.343 15 12C15 13.657 13.657 15 12 15C10.343 15 9 13.657 9 12C9 10.343 10.343 9 12 9ZM18 6C17.448 6 17 6.448 17 7C17 7.552 17.448 8 18 8C18.552 8 19 7.552 19 7C19 6.448 18.552 6 18 6Z"
-            />
-          </svg>
-          @glebt27
-        </a>
+        <a href="mailto:tvgleb27@gmail.com">📧 tvgleb27@gmail.com</a>
+        <a href="https://www.instagram.com/glebt27/" target="_blank">📷 @glebt27</a>
       </div>
-
       <p class="legal-links">
         <a href="#" data-modal="impressum">Impressum</a> |
         <a href="#" data-modal="datenschutz">Datenschutzerklärung</a>
       </p>
-
       <p class="copyright">© 2025 Gleb Titov – Webdesign & Data Analytics</p>
     </div>
   </footer>
@@ -111,9 +131,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Impressum</h2>
-      <p>Gleb Titov<br />
-        E-Mail: <a href="mailto:tvgleb27@gmail.com">tvgleb27@gmail.com</a>
-      </p>
+      <p>Gleb Titov<br>E-Mail: <a href="mailto:tvgleb27@gmail.com">tvgleb27@gmail.com</a></p>
     </div>
   </div>
 
@@ -121,38 +139,35 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Datenschutzerklärung</h2>
-      <p>
-        Ihre Daten (z.B. E-Mail) werden nur zum Zweck der Kontaktaufnahme verwendet.
-        Eine Weitergabe an Dritte findet nicht statt. Diese Website speichert keine persönlichen Daten.
-      </p>
+      <p>Ihre Daten (z.B. E-Mail) werden nur zum Zweck der Kontaktaufnahme verwendet. Eine Weitergabe an Dritte findet nicht statt. Diese Website speichert keine persönlichen Daten.</p>
     </div>
   </div>
 
-  <!-- Modal Script -->
+  <!-- Scripts -->
   <script>
     const modalLinks = document.querySelectorAll("[data-modal]");
-    modalLinks.forEach((link) => {
-      link.addEventListener("click", function (e) {
+    modalLinks.forEach(link => {
+      link.addEventListener("click", e => {
         e.preventDefault();
-        const modalId = this.getAttribute("data-modal") + "-modal";
-        document.getElementById(modalId).style.display = "block";
+        const modal = document.getElementById(link.dataset.modal + "-modal");
+        modal.style.display = "block";
       });
     });
 
-    const closeButtons = document.querySelectorAll(".modal .close");
-    closeButtons.forEach((btn) =>
-      btn.addEventListener("click", function () {
-        this.closest(".modal").style.display = "none";
+    document.querySelectorAll(".modal .close").forEach(btn =>
+      btn.addEventListener("click", () => btn.closest(".modal").style.display = "none")
+    );
+
+    window.addEventListener("click", e =>
+      document.querySelectorAll(".modal").forEach(m => {
+        if (e.target === m) m.style.display = "none";
       })
     );
 
-    window.addEventListener("click", function (e) {
-      document.querySelectorAll(".modal").forEach((modal) => {
-        if (e.target === modal) {
-          modal.style.display = "none";
-        }
-      });
-    });
+    const navToggle = document.getElementById("nav-toggle");
+    document.querySelectorAll("nav a").forEach(a =>
+      a.addEventListener("click", () => (navToggle.checked = false))
+    );
   </script>
 </body>
 </html>
